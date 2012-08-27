@@ -1,0 +1,31 @@
+<h1>Listing comments</h1>
+
+<table>
+  <tr>
+    <th>Comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @comments.each do |comment| %>
+  <tr>
+    <td><%= comment.comment %></td>
+    <td><%= link_to 'Show', comment %></td>
+    <td><%= link_to 'Edit', edit_comment_path(comment) %></td>
+    <td><%= link_to 'Destroy', comment, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+<div id="comments"></div>
+
+<%= form_for :comment, :remote => true, :html => { :id => 'new-comment-form' } do |f| %>
+  <%= f.text_field :comment %>
+  <div class="errors"></div>
+  <%= f.submit %>
+<% end %>
+
+<br />
+
+<%= link_to 'New Comment', new_comment_path %>
+

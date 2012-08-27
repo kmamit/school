@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Student:</b>
+  <%= @studentphoto.student_id %>
+  <%= image_tag @studentphoto.photo.url(:small) %>
+</p>
+
+
+<%= link_to 'Edit', edit_studentphoto_path(@studentphoto) %> |
+<%= link_to 'Back', studentphotos_path %>

@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @student.name %>
+</p>
+<%= image_tag @student.photo %></br>
+<% photos = @student.studentphotos %>
+
+<% photos.each do |f| %></br>
+</br>
+<%= image_tag f.photo %>
+</br>
+<% end %>
+</br>
+<p>
+  <b>Rollno:</b>
+  <%= @student.rollno %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

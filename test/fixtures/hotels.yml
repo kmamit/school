@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  hotel_ref: MyString
+  hotel_name: MyString
+  package_price: 1.5
+  folder_name: MyString
+  tripadvisor_rating: 1.5
+  tripadvisor_url: MyString
+  hotel_url: MyString
+  makemytrip_url: MyString
+  cleartrip_url: MyString
+  extra_inclusion_1: MyString
+  extra_inclusion_2: MyString
+  extra_inclusion_3: MyString
+  extra_inclusion_4: MyString
+
+two:
+  hotel_ref: MyString
+  hotel_name: MyString
+  package_price: 1.5
+  folder_name: MyString
+  tripadvisor_rating: 1.5
+  tripadvisor_url: MyString
+  hotel_url: MyString
+  makemytrip_url: MyString
+  cleartrip_url: MyString
+  extra_inclusion_1: MyString
+  extra_inclusion_2: MyString
+  extra_inclusion_3: MyString
+  extra_inclusion_4: MyString

@@ -1,0 +1,21 @@
+<%= form_for(@dtpic) do |f| %>
+  <% if @dtpic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dtpic.errors.count, "error") %> prohibited this dtpic from being saved:</h2>
+
+      <ul>
+      <% @dtpic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :join %><br />
+    <%= f.date_select :join %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

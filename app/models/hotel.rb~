@@ -1,0 +1,4 @@
+class Hotel < ActiveRecord::Base
+  attr_accessible :cleartrip_url, :extra_inclusion_1, :extra_inclusion_2, :extra_inclusion_3, :extra_inclusion_4, :folder_name, :hotel_name, :hotel_ref, :hotel_url, :makemytrip_url, :package_price, :tripadvisor_rating, :tripadvisor_url
+has_many :comments
+end

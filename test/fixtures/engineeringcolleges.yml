@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  application_number: MyString
+  insti_state: MyString
+  insti_region: MyString
+  institute_name: MyText
+  name_of_course: MyString
+  level_of_course: MyString
+  approved_intake: 1
+
+two:
+  application_number: MyString
+  insti_state: MyString
+  insti_region: MyString
+  institute_name: MyText
+  name_of_course: MyString
+  level_of_course: MyString
+  approved_intake: 1

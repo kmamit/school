@@ -1,0 +1,36 @@
+<h1>Listing Hotels</h1>
+
+<table>
+  <tr>
+    <th>Hotel_ref</th>
+    <th>Hotel_name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hotels.each do |hotel| %>
+  <tr>
+    <td><%= hotel.hotel_ref %></td>
+    <td><%= hotel.hotel_name %></td>
+    <td><%= hotel.folder_name %></td>
+	<td><%= hotel.tripadvisor_rating %></td>
+	
+	<td><%= hotel.extra_inclusion_1 %></td>
+	<td><%= hotel.extra_inclusion_2 %></td>
+	<td><%= hotel.extra_inclusion_3 %></td>
+	<td><%= hotel.extra_inclusion_4 %></td>
+		
+  </tr>
+<% end %>
+</table>
+<div id="comments"></div>
+
+<%= form_for :comment, :remote => true, :html => { :id => 'new-comment-form' } do |f| %>
+  <%= f.text_area(:comment) %>
+  <div class="errors"></div>
+  <%= f.submit %>
+<% end %>
+<br />
+
+

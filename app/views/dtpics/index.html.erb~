@@ -1,0 +1,46 @@
+<script type="text/javascript">
+			$(function(){
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
+<h1>Listing dtpics</h1>
+
+<table>
+  <tr>
+    <th>Join</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dtpics.each do |dtpic| %>
+  <tr>
+    <td><%= dtpic.join %></td>
+    <td><%= link_to 'Show', dtpic %></td>
+    <td><%= link_to 'Edit', edit_dtpic_path(dtpic) %></td>
+    <td><%= link_to 'Destroy', dtpic, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dtpic', new_dtpic_path %>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
+
+<h2 class="demoHeaders">Datepicker</h2>
+		<div id="datepicker"></div>
+
