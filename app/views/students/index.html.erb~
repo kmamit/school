@@ -1,5 +1,5 @@
 <h1>Listing students</h1>
-
+<a href="http://www.flickr.com/photos/85802566@N02/7860632660/" title="PartyTonight by kmamit, on Flickr"><img src="http://farm9.staticflickr.com/8434/7860632660_da7ae85534.jpg" width="1500" height="2281" alt="PartyTonight"></a>
 <table>
   <tr>
     <th>Name</th>
@@ -33,7 +33,7 @@
 <% end %>
 
 </table>
-<%= datepicker_input "student","birthday" %>
+
 <div id="demo-modal">
 	<button   >Select Package</button> 
 	
@@ -81,9 +81,6 @@ $(document).ready(function()
 		hide: false,
 		style: 'ui-tooltip-light ui-tooltip-rounded'
 		
-	});
-	$(function() {
-		$( "#datepicker" ).datepicker();
 	});
 });
 
