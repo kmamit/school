@@ -4,14 +4,9 @@
   <b>Name:</b>
   <%= @student.name %>
 </p>
-<%= image_tag @student.photo %></br>
-<% photos = @student.studentphotos %>
 
-<% photos.each do |f| %></br>
-</br>
-<%= image_tag f.photo.url(:small) %>
-</br>
-<% end %>
+
+
 </br>
 <p>
   <b>Rollno:</b>

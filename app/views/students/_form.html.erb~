@@ -1,4 +1,4 @@
-<%= form_remote_tag(:new => "student",:url => {:action => :create_student}) %>
+
 <%= form_for(@student,:html => { :multipart => true}) do |f| %>
   <% if @student.errors.any? %>
     <div id="error_explanation">
@@ -30,4 +30,4 @@
     <% end %>
   </div>
 <% end %>
-<%= end_form_tag %>
+

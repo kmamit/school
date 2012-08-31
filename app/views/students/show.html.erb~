@@ -9,7 +9,7 @@
 
 <% photos.each do |f| %></br>
 </br>
-<%= image_tag f.photo %>
+<%= image_tag f.photo.url(:small) %>
 </br>
 <% end %>
 </br>

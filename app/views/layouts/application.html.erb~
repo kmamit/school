@@ -10,7 +10,26 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.21.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.21.custom.min.js"></script>
 
+		<script type="text/javascript">
+			$(function(){
+
+				// Datepicker
+				$('#datepicker').datepicker({
+					inline: true
+				});
+
+				//hover states on the static widgets
+				$('#dialog_link, ul#icons li').hover(
+					function() { $(this).addClass('ui-state-hover'); },
+					function() { $(this).removeClass('ui-state-hover'); }
+				);
+
+			});
+		</script>
 
 <!--Stylesheets-->
 
@@ -47,8 +66,8 @@
 
 <div class="container">
   <div class="row">
-    <div class="span10"><%= yield %></div>
-    <div class="span2">
+    <div class="span12"><%= yield %></div>
+    <div class="span0">
       <h2>About Us</h2>
       <p>M.G.M. Higher Secondary School Bokaro Steel City, is a Private, English Medium Co-educational institution governed by the Calcutta Diocesan Council of the Indian Orthodox Church. The Founder President of the School is Late Lamented His Grace Dr. Stephanos Mar Theodosius H.G. Dr. Joseph Mar Dionysius is the present President of this school. It was established on 8th April. 1986 and is situated in the township of Bokaro Steel Limited. M.G.M. denotes Mar Gregorios Memorial. The late Mar Gregorios of Parumala (Kerala State) is the Patron Saint of this as well as the schools in that name, all over India.
 
